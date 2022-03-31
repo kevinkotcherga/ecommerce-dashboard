@@ -6,6 +6,7 @@ import styled from "styled-components";
 import './home.scss';
 import axios from 'axios';
 import Customers from '../../components/customers/Customers';
+import Chart from '../../components/chart/Chart';
 
 const Select = styled.select`
   padding: 10px;
@@ -70,6 +71,12 @@ const Home = () => {
           <TotalRevenue array={array} />
           <AverageRevenue array={array} />
           <Customers array={array} />
+        </div>
+      </div>
+      <div className="home__chart">
+        <span className='home__title'>Revenue Per Month</span>
+        <div className='home__graphique'>
+          <Chart array={array} />
         </div>
       </div>
     </div>

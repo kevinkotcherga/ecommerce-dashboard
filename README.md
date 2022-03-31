@@ -1,5 +1,5 @@
 # README
-Pour réaliser ce tableau de bord j'ai choisi de partir sur le framework Ruby On Rails et la bibliothèque React. Je l'ai ensuite publié sur la plateforme de déploiement Heroku qui est disponible [ici](https://ecommerce-dashboard-kotcherga.herokuapp.com/)(séléctionné 'all' ou 'United' dans les options de pays fait crasher l'application en ligne mais pas en local).
+Pour réaliser ce tableau de bord j'ai choisi de partir sur le framework Ruby On Rails et la bibliothèque React. Je l'ai ensuite publié sur la plateforme de déploiement Heroku qui est disponible [ici](https://ecommerce-dashboard-kotcherga.herokuapp.com/) (sélectionner 'all' ou 'United' dans les options de pays fait crasher l'application en ligne mais pas en local).
 
 ## Mise en place
 

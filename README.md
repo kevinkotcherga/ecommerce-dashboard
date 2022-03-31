@@ -1,5 +1,5 @@
 # README
-Pour réaliser ce tableau de bord j'ai choisi de partir sur le framework Ruby On Rails et la bibliothèque React. Je l'ai ensuite publié sur la plateforme de déploiement Heroku qui est disponible [ici](https://ecommerce-dashboard-kotcherga.herokuapp.com/) (sélectionner 'all' ou 'United' dans les options de pays fait crasher l'application en ligne mais pas en local).
+Pour réaliser ce tableau de bord j'ai choisi de partir sur le framework Ruby On Rails et la bibliothèque React. Je l'ai ensuite publié sur la plateforme de déploiement Heroku qui est disponible [ici](https://ecommerce-dashboard-kotcherga.herokuapp.com/) (sélectionner 'all' ou 'United' dans les options de pays fait crasher l'application en ligne mais pas localement).
 
 ## Mise en place
 
@@ -7,7 +7,7 @@ Pour réaliser ce tableau de bord j'ai choisi de partir sur le framework Ruby On
 
 2- La première problématique à laquel j'ai été confronté était la taille du fichier csv. L'importation ou la lecture de celui-ci me prenait trop de temps. J'ai donc utilisé redis et sidekiq pour faire le travail en arrière plan.
 
-3- Le tableau de bord devant être filtré par pays, il me fallait trouver une solution pour chercher dans la db depuis React. J'ai donc utilisé la gem 'ransack'.
+3- Le tableau de bord devant être filtré par pays, il me fallait trouver une solution pour chercher dans la db de Rails depuis React. J'ai donc utilisé la gem 'ransack'.
 
 4- J'ai créé mon front React avec npx create-react-app.
 

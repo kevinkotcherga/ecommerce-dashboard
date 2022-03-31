@@ -9,7 +9,7 @@ class SearchController < ApplicationController
   # @orders est envoyé dans views/search/search.json pour être lu
   def search
     @orders = Order.ransack(country_cont: params[:q])
-                    .result(distinct: true)
+                   .result(distinct: true)
   end
 
   private

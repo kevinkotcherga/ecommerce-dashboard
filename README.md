@@ -1,5 +1,5 @@
 # README
-Pour réaliser mon application j'ai choisi de partir sur le framework Ruby On Rails et la bibliothèque React. Je l'ai ensuite publié sur la plateforme de déploiement Heroku, elle est disponible [ici](https://ecommerce-dashboard-kotcherga.herokuapp.com/).
+Pour réaliser mon application j'ai choisi de partir sur le framework Ruby On Rails et la bibliothèque React. Je l'ai ensuite publié sur la plateforme de déploiement Heroku qui est disponible [ici](https://ecommerce-dashboard-kotcherga.herokuapp.com/).
 
 ## Mise en place
 

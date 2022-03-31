@@ -1,3 +1,3 @@
 web: bundle exec rails s
 release: bin/rake db:migrate
-ordersworker: bundle exec sidekiq -c 2
+orderworker: bundle exec sidekiq -c 2

@@ -1,5 +1,5 @@
 # README
-Pour réaliser mon application j'ai choisi de partir sur le framework Ruby On Rails et la bibliothèque React. Je l'ai ensuite publié sur la plateforme de déploiement Heroku qui est disponible [ici](https://ecommerce-dashboard-kotcherga.herokuapp.com/).
+Pour réaliser mon application j'ai choisi de partir sur le framework Ruby On Rails et la bibliothèque React. Je l'ai ensuite publié sur la plateforme de déploiement Heroku qui est disponible [ici](https://ecommerce-dashboard-kotcherga.herokuapp.com/)(séléctionné 'all' ou 'United' fait crasher l'application en ligne).
 
 ## Mise en place
 
@@ -33,3 +33,5 @@ npm start
 ```
 
 ## Amélioration
+
+Je dois trouver le moyen de charger toute la data sans faire crasher l'application quand elle est en ligne. Il faudrait également que je puisse chercher la donnée d'un pays sans devoir écrire son nom exact dans la recherche.

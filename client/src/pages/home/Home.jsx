@@ -12,7 +12,6 @@ const Select = styled.select`
 `
 
 const Option = styled.option`
-
 `
 
 const Home = () => {

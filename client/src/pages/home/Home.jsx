@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Header from '../../components/header/Header';
 import TotalRevenue from '../../components/totalRevenue/TotalRevenue'
+import AverageRevenue from '../../components/averageRevenue/AverageRevenue';
 import styled from "styled-components";
 import './home.scss';
 import axios from 'axios';
@@ -66,6 +67,7 @@ const Home = () => {
         <div className='home__widgets'>
           {/* La valeur d'array est envoyé dans les composant widgets */}
           <TotalRevenue array={array} />
+          <AverageRevenue array={array} />
         </div>
       </div>
     </div>

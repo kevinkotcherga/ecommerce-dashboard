@@ -19,7 +19,7 @@ const Home = () => {
 
   // setCountry récupère la valeur du pays sélectionné dans handleFilters()
   const [country, setCountry] = useState({});
-  // À chaque changement d'option du select, handleFilters récupère l'information du pays choisi
+  // À chaque changement d'option du Select, handleFilters récupère l'information du pays choisi
   const handleFilters = (element) => {
     const value = element.target.value;
     // Le pays choisi est stocké dans setCountry
@@ -32,7 +32,7 @@ const Home = () => {
   useEffect(() => {
     const getCountries = async () => {
       try {
-        // Axios appelle l'api de recherche et lui donne la valeur d'un pays sélectionné s'il y en a un
+        // Axios appelle l'api de recherche et lui donne la valeur d'un pays sélectionné si elle existe
         const response = await axios.get(country === 'All' ? '/search.json' : `/search.json?q=${country}`);
         // La donnée récupérée par axios est stocké dans setFilteredCountries
         setFilteredCountries(response.data.orders)
@@ -41,7 +41,7 @@ const Home = () => {
     getCountries();
   }, [country]);
 
-  // Si rien n'est contenu dans filteredCountries alors il est vide et ne créer pas d'erreurs
+  // Si rien n'est contenu dans filteredCountries alors le tableau est vide et ne créer pas d'erreurs
   const array = filteredCountries || [];
 
   return (

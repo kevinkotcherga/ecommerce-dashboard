@@ -43,7 +43,7 @@ const Home = () => {
     getCountries();
   }, [country]);
 
-  // Si rien n'est contenu dans filteredCountries alors le tableau est vide et ne créer pas d'erreur
+  // Si rien n'est contenu dans filteredCountries alors le tableau est vide et ne créer pas d'erreurs
   const array = filteredCountries || [];
 
   return (

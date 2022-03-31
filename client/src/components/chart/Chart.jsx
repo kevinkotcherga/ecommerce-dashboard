@@ -72,7 +72,7 @@ const Chart = ({ array }) => {
           bottom: 5,
         }}
       >
-        <CartesianGrid fill="#F8FAFB"/>
+        <CartesianGrid fill="#f8f9fa"/>
         <XAxis dataKey="0" />
         <YAxis />
         <Tooltip />

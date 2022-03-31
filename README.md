@@ -20,6 +20,7 @@ Pour réaliser ce tableau de bord j'ai choisi de partir sur le framework Ruby On
 8- J'ai mis en place redis et sidekiq sur Heroku pour le déploiement.
 
 ## Utilisation 
+Un pluggin "Cross-origin resource sharing (CORS)" est nécessaire.
 
 ```
 cd ecommerce-dashboard

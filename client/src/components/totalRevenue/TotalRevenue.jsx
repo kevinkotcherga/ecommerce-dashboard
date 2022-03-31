@@ -30,6 +30,6 @@ const TotalRevenue = ({ array }) => {
       <span className='total__counter'>{totalWithCommas} €</span>
     </div>
   )
-}
+};
 
 export default TotalRevenue;

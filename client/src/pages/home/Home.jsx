@@ -5,6 +5,7 @@ import AverageRevenue from '../../components/averageRevenue/AverageRevenue';
 import styled from "styled-components";
 import './home.scss';
 import axios from 'axios';
+import Customers from '../../components/customers/Customers';
 
 const Select = styled.select`
   padding: 10px;
@@ -68,10 +69,11 @@ const Home = () => {
           {/* La valeur d'array est envoyé dans les composant widgets */}
           <TotalRevenue array={array} />
           <AverageRevenue array={array} />
+          <Customers array={array} />
         </div>
       </div>
     </div>
   )
-}
+};
 
 export default Home;

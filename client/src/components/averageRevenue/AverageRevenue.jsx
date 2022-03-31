@@ -23,7 +23,7 @@ const AverageRevenue = ({ array }) => {
         let value = item.quantity * item.unit_price;
         // Les valeurs sont ajoutées au total
         total += value;
-      })
+      });
       return total;
     }
 
@@ -37,6 +37,6 @@ const AverageRevenue = ({ array }) => {
       <span className='averagerevenue__counter'>{AverageRevenuePerOrder.toFixed(2)} €</span>
     </div>
   )
-}
+};
 
 export default AverageRevenue;

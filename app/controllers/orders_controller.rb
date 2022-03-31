@@ -3,6 +3,7 @@
 # app/controllers/order_controller.rb
 class OrdersController < ApplicationController
   def download_csv
+    render json: Order.all
     csv_file = File.join Rails.root, 'db', 'memory-tech-challenge-data.csv'
     # AddOrderWorker est appellé dans app/workers/add_order_worker
     # perfom_async permet de transmettre les données à Redis

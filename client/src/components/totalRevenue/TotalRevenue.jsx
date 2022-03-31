@@ -1,5 +1,5 @@
 import React from 'react';
-import './totalrevenue.scss'
+import './totalrevenue.scss';
 
 const TotalRevenue = ({ array }) => {
 
@@ -22,14 +22,12 @@ const TotalRevenue = ({ array }) => {
 
   // La valeur de getTotal est envoyée dans numberWithCommas pour lui insérer des virgules
   // toFixed(2) ne laisse que deux chiffres après la virgule à la valeur de getTotal
-  const totalWithCommas = numberWithCommas(getTotal(array).toFixed(2))
+  const totalWithCommas = numberWithCommas(getTotal(array).toFixed(2));
 
   return (
-    <div>
-      <div className='total'>
-        <span className='total__title'>Revenue</span>
-        <span className='total__counter'>{totalWithCommas} €</span>
-      </div>
+    <div className='total'>
+      <span className='total__title'>Revenue</span>
+      <span className='total__counter'>{totalWithCommas} €</span>
     </div>
   )
 }

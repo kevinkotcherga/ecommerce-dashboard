@@ -9,15 +9,13 @@ Pour réaliser ce tableau de bord j'ai choisi de partir sur le framework Ruby On
 
 3- Le tableau de bord devant être filtré par pays, il me fallait trouver une solution pour chercher dans la db de Rails depuis React. J'ai donc utilisé la gem 'ransack'.
 
-4- J'ai créé mon front React avec npx create-react-app.
+4- Je suis passé au front et j'ai utilisé axios pour accéder à mon API de recherche.
 
-5- J'ai utilisé axios pour accéder à mon API de recherche.
+5- J'ai mis en place les fonctions pour trouver le total des revenus, le nombre de clients, les revenus moyen par commandes.
 
-6- J'ai mis en place les fonctions pour trouver le total des revenus, le nombre de clients, les revenus moyen par commandes.
+6- J'ai mis en place la fonction pour trouver les revenues par mois et je les ai affichés dans un graphique grâce à la librairie recharts.
 
-7- J'ai mis en place la fonction pour trouver les revenues par mois et je les ai affichés dans un graphique grâce à la librairie recharts.
-
-8- J'ai mis en place redis et sidekiq sur Heroku pour le déploiement.
+7- J'ai mis en place redis et sidekiq sur Heroku pour le déploiement.
 
 ## Utilisation 
 Un pluggin "Cross-origin resource sharing (CORS)" est nécessaire.

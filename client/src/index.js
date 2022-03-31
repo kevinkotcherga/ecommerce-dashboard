@@ -1,16 +1,15 @@
 import React from 'react';
 import App from './App';
+import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import * as ReactDOMClient from 'react-dom/client';
 
-const container = document.getElementById('root');
+const rootNode = document.getElementById('root');
 
-const root = ReactDOMClient.createRoot(container);
-
-root.render(
+ReactDOM.render(
 	<BrowserRouter>
 		<Routes>
 			<Route path="/" element={<App />} />
 		</Routes>
-	</BrowserRouter>
+	</BrowserRouter>,
+	rootNode
 );

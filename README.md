@@ -1,5 +1,5 @@
 # README
-Pour réaliser ce tableau de bord j'ai choisi de partir sur le framework Ruby On Rails et la bibliothèque React. Je l'ai ensuite publié sur la plateforme de déploiement Heroku qui est disponible [ici](https://ecommerce-dashboard-kotcherga.herokuapp.com/)(séléctionné 'all' ou 'United' dans les options de pays fait crasher l'application en ligne).
+Pour réaliser ce tableau de bord j'ai choisi de partir sur le framework Ruby On Rails et la bibliothèque React. Je l'ai ensuite publié sur la plateforme de déploiement Heroku qui est disponible [ici](https://ecommerce-dashboard-kotcherga.herokuapp.com/)(séléctionné 'all' ou 'United' dans les options de pays fait crasher l'application en ligne mais pas en local).
 
 ## Mise en place
 
@@ -35,4 +35,4 @@ npm start
 
 ## Amélioration
 
-Je dois trouver le moyen de charger toute la data sans faire crasher l'application quand elle est en ligne. Il faudrait également que je puisse chercher la donnée d'un pays sans devoir écrire son nom exact dans la recherche.
+Je dois trouver le moyen de charger toute la data avec la séléction 'all' sans faire crasher l'application quand elle est en ligne. Je dois également trouver le moyen de rendre cette action plus rapide localement. Il faudrait que je puisse chercher la donnée d'un pays sans devoir écrire son nom exact dans la recherche. Je dois régler les problèmes d'affichages du graphique qui bug selon les pays affichés.

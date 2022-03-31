@@ -17,7 +17,7 @@ Pour réaliser ce tableau de bord j'ai choisi de partir sur le framework Ruby On
 
 7- J'ai mis en place la fonction pour trouver les revenues par mois et je les ai affichés dans un graphique grâce à la librairie recharts.
 
-7- J'ai mis en place redis et sidekiq sur Heroku pour le déploiement.
+8- J'ai mis en place redis et sidekiq sur Heroku pour le déploiement.
 
 ## Utilisation 
 

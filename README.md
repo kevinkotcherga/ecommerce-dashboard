@@ -13,7 +13,9 @@ Pour réaliser ce tableau de bord j'ai choisi de partir sur le framework Ruby On
 
 5- J'ai utilisé axios pour accéder à mon API de recherche.
 
-6- J'ai mis en place les fonctions pour trouver le total des revenus, le nombre de clients, les revenus moyen par commandes et les revenues par mois.
+6- J'ai mis en place les fonctions pour trouver le total des revenus, le nombre de clients, les revenus moyen par commandes.
+
+7- J'ai mis en place la fonction pour trouver les revenues par mois et je les ai affichés dans un graphique grâce à la librairie recharts.
 
 7- J'ai mis en place redis et sidekiq sur Heroku pour le déploiement.
 
@@ -35,4 +37,4 @@ npm start
 
 ## Amélioration
 
-Je dois trouver le moyen de charger toute la data avec la séléction 'all' sans faire crasher l'application quand elle est en ligne. Je dois également trouver le moyen de rendre cette action plus rapide localement. Il faudrait que je puisse chercher la donnée d'un pays sans devoir écrire son nom exact dans la recherche. Je dois régler les problèmes d'affichages du graphique qui bug selon les pays affichés.
+Je dois trouver le moyen de charger toute la data avec la séléction 'all' ou 'United sans faire crasher l'application quand elle est en ligne. Je dois également trouver le moyen de rendre cette action plus rapide localement. Il faudrait que je puisse chercher la donnée d'un pays sans devoir écrire son nom exact dans la recherche. Je dois régler les problèmes d'affichages du graphique recharts qui fonctionne mal selon les pays.

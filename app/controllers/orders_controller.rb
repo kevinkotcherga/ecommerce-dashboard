@@ -2,10 +2,6 @@
 
 # app/controllers/order_controller.rb
 class OrdersController < ApplicationController
-  def index
-    render json: Order.all
-  end
-
   def download_csv
     csv_file = File.join Rails.root, 'db', 'memory-tech-challenge-data.csv'
     # AddOrderWorker est appellé dans app/workers/add_order_worker

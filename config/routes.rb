@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :notes, only: [:index]
-  get :download_csv, controller: :order
+  get '/orders/download_csv'
   get :search, controller: :search
 
   # fallback#index retourne le front react

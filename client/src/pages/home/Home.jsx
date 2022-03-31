@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Header from '../../components/header/Header';
+import TotalRevenue from '../../components/totalRevenue/TotalRevenue'
 import styled from "styled-components";
 import './home.scss';
 import axios from 'axios';
@@ -16,7 +17,7 @@ const Option = styled.option`
 
 const Home = () => {
 
-  // useState récupère le pays choisi avec onChange={handleFilters}
+  // setCountry récupère la valeur du pays sélectionné dans handleFilters()
   const [country, setCountry] = useState({});
   // À chaque changement d'option du select, handleFilters récupère l'information du pays choisi
   const handleFilters = (element) => {
@@ -25,21 +26,23 @@ const Home = () => {
     setCountry(value);
   };
 
-  const [filteredProducts, setFilteredProducts] = useState([]);
+  // setFilteredCountries récupère la data filtré par pays dans getCountries()
+  const [filteredCountries, setFilteredCountries] = useState([]);
 
   useEffect(() => {
-    const getProducts = async () => {
+    const getCountries = async () => {
       try {
-        const response = await axios.get(country === 'All' ? 'http://localhost:3000/search.json' : `http://localhost:3000/search.json?q=${country}`);
-        setFilteredProducts(response.data)
+        // Axios appelle l'api de recherche et lui donne la valeur d'un pays sélectionné s'il y en a un
+        const response = await axios.get(country === 'All' ? '/search.json' : `/search.json?q=${country}`);
+        // La donnée récupérée par axios est stocké dans setFilteredCountries
+        setFilteredCountries(response.data.orders)
       } catch (err) {}
     };
-    getProducts()
+    getCountries();
   }, [country]);
 
-  const array = filteredProducts.memories
-
-  const arr = array || [];
+  // Si rien n'est contenu dans filteredCountries alors il est vide et ne créer pas d'erreurs
+  const array = filteredCountries || [];
 
   return (
     <div className='home'>
@@ -58,6 +61,13 @@ const Home = () => {
           <Option>EIRE</Option>
           <Option>United</Option>
         </Select>
+      </div>
+      <div className="home__summary">
+        <span className='home__title'>Summary</span>
+        <div className='home__widgets'>
+          {/* La valeur d'array est envoyé dans les composant widgets */}
+          <TotalRevenue array={array} />
+        </div>
       </div>
     </div>
   )

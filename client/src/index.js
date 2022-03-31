@@ -1,13 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import App from './App';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import * as ReactDOMClient from 'react-dom/client';
 
-ReactDOM.render(
+const container = document.getElementById('root');
+
+const root = ReactDOMClient.createRoot(container);
+
+root.render(
 	<BrowserRouter>
 		<Routes>
 			<Route path="/" element={<App />} />
 		</Routes>
-	</BrowserRouter>,
-	document.getElementById('root'),
+	</BrowserRouter>
 );

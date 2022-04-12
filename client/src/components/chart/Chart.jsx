@@ -45,7 +45,7 @@ const Chart = ({ array }) => {
   const removeCommaFromArray = revenuePerMonth.map(item => {
     const months = item[0];
     // toFixed(2) ne laisse que deux chiffres après la virgule à la valeur
-    const removeCommaFromNumber = item[1].toFixed(0);
+    const removeCommaFromNumber = Math.trunc(item[1]);
 
   /*  Cette fonction m'aurait permis de séparer les montants par des virgules pour
    plus de visibilité mais le graphique ne comprend pas cette option : */

@@ -52,16 +52,22 @@ const Home = () => {
       <div className="home__country">
         <span className='home__label'>Country</span>
         <Select name="country" onChange={handleFilters}>
-          <Option defaultValue >
-            All
-          </Option>
           <Option>Netherlands</Option>
           <Option>France</Option>
           <Option>Norway</Option>
           <Option>Germany</Option>
           <Option>Australia</Option>
-          <Option>EIRE</Option>
-          <Option>United</Option>
+          <Option>Switzerland</Option>
+          <Option>Italy</Option>
+          <Option>Czech Republic</Option>
+          <Option>Brazil</Option>
+          <Option>Singapore</Option>
+          <Option>Malta</Option>
+          <Option>Greece</Option>
+          <Option>Poland</Option>
+          <Option>Lebanon</Option>
+          <Option>Japan</Option>
+          <Option>European Community</Option>
         </Select>
       </div>
       <div className="home__summary">
